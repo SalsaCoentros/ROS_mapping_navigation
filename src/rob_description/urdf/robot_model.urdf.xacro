@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+
+<robot name="kuka" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <mesh filename="package://rob_description/meshes/INTMOB_S.dae" />
+            </geometry>
+            <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 -0.075"/>
+        </visual>
+    </link>
+
+    <!--GPS-->
+    <joint name="gps_joint" type="fixed">
+        <parent link="base_link" />
+        <child link = "gps_frame" />
+        <origin xyz="0.0 0.0 0.450" rpy="1.570796 0.0 3.141291" />
+    </joint>
+
+    <link name="gps_frame" />
+
+    <!--FRONT LiDAR-->
+    <joint name="front_lidar_joint" type="fixed">
+        <parent link="base_link" />
+        <child link = "lidar_front_frame" />
+        <origin xyz="0.487 -0.255 0.0" rpy="1.570796 0.0 2.357016" />
+    </joint>
+
+    <link name="lidar_front_frame" />
+
+    <!--REAR LiDAR-->
+    <joint name="rear_lidar_joint" type="fixed">
+        <parent link="base_link" />
+        <child link = "lidar_back_frame" />
+        <origin xyz="-0.487 0.255 0.0" rpy="1.570796 0.0 -0.78523" />
+    </joint>
+
+    <link name="lidar_back_frame" />
+
+    <!--IMU-->
+    <joint name="imu_joint" type="fixed">
+        <parent link="base_link" />
+        <child link = "imu_frame" />
+        <origin xyz="0.0 0.0 0.450" rpy="1.570796 0.0 3.141291" />
+    </joint>
+
+    <link name="imu_frame" />
+
+</robot>

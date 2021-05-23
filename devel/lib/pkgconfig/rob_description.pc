@@ -1,0 +1,8 @@
+prefix=/home/robotics/catkin_ws/devel
+
+Name: rob_description
+Description: Description of rob_description
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

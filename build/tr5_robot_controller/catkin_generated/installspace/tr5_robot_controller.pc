@@ -1,0 +1,8 @@
+prefix=/home/robotics/catkin_ws/install
+
+Name: tr5_robot_controller
+Description: Description of tr5_robot_controller
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs interactive_markers rospy sensor_msgs tr5_kinematics visualization_msgs std_msgs message_runtime

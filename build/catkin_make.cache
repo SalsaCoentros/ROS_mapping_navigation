@@ -1,0 +1,2 @@
+lab23:lab2_communication:lab2_part1_pkg:rob_bringup:rob_description:tr5_description:tr5_kinematics:tr5_robot_controller
+-DCATKIN_DEVEL_PREFIX=/home/robotics/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/robotics/catkin_ws/install -G Unix Makefiles

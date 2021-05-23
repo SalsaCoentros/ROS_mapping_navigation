@@ -1,0 +1,8 @@
+prefix=/home/robotics/catkin_ws/install
+
+Name: lab23
+Description: Description of lab23
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
