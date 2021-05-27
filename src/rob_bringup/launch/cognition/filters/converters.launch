@@ -1,0 +1,4 @@
+<launch>
+    <node name="gps_converter_node" pkg="rob_bringup" type="GPSconverter.py" />
+    <node name="pose_converter_node" pkg="rob_bringup" type="FILTERconverter.py" />    
+</launch>
