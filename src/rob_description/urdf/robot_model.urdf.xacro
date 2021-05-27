@@ -15,7 +15,7 @@
     <joint name="gps_joint" type="fixed">
         <parent link="base_link" />
         <child link = "gps_frame" />
-        <origin xyz="0.0 0.0 0.450" rpy="1.570796 0.0 3.141291" />
+        <origin xyz="0.0 0.0 0.450" rpy="0.0 0.0 -1.5708" />
     </joint>
 
     <link name="gps_frame" />
@@ -24,7 +24,7 @@
     <joint name="front_lidar_joint" type="fixed">
         <parent link="base_link" />
         <child link = "lidar_front_frame" />
-        <origin xyz="0.487 -0.255 0.0" rpy="1.570796 0.0 2.357016" />
+        <origin xyz="0.487 -0.255 0.0" rpy="0.0 0.0 -0.7859" />
     </joint>
 
     <link name="lidar_front_frame" />
@@ -33,7 +33,7 @@
     <joint name="rear_lidar_joint" type="fixed">
         <parent link="base_link" />
         <child link = "lidar_back_frame" />
-        <origin xyz="-0.487 0.255 0.0" rpy="1.570796 0.0 -0.78523" />
+        <origin xyz="-0.487 0.255 0.0" rpy="0.0 0.0 2.3557" />
     </joint>
 
     <link name="lidar_back_frame" />
@@ -42,7 +42,7 @@
     <joint name="imu_joint" type="fixed">
         <parent link="base_link" />
         <child link = "imu_frame" />
-        <origin xyz="0.0 0.0 0.450" rpy="1.570796 0.0 3.141291" />
+        <origin xyz="0.0 0.0 0.450" rpy="0.0 0.0 -1.5708" />
     </joint>
 
     <link name="imu_frame" />
